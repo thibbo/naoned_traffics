@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="target"
+            type="bzh.naoned.naonedbusdatadisplay.service.model.Target" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/traffic_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{target.routeLabel}"
+            android:textColor="@{target.routeColor}"
+            android:textStyle="bold" />
+    </LinearLayout>
+</layout>

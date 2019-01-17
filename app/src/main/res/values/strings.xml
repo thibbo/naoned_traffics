@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">NaonedbusDataDisplay</string>
+    <string name="message">Message: %s</string>
+    <string name="date">Date d\'alerte: %s</string>
+    <string name="source">Source: %s</string>
+    <string name="line">Ligne: %s</string>
+    <string name="share">Partager</string>
+    <string name="img_fetch_message">image fetched from api</string>
+</resources>
