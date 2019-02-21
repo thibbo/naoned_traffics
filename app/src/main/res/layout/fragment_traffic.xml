@@ -5,14 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
         <import type="android.text.TextUtils" />
-
         <import type="android.view.View" />
-
-        <variable
-            name="isLoading"
-            type="boolean" />
 
         <variable
             name="traffic"
@@ -30,7 +24,8 @@
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
             android:orientation="vertical"
-            android:padding="5dp">
+            android:padding="5dp"
+            tools:ignore="MissingConstraints">
 
             <TextView
                 android:id="@+id/traffic_title"
@@ -58,12 +53,12 @@
                 android:layout_height="wrap_content"
                 android:text="@{String.format(@string/source, traffic.sourceLabel)}" />
 
-            <ImageView
-                android:layout_width="200dp"
-                android:layout_height="200dp"
-                android:layout_gravity="center"
-                android:contentDescription="@string/img_fetch_message"
-                app:imageUrl="@{traffic.sourcePicture}" />
+            <!--<ImageView-->
+                <!--android:layout_width="200dp"-->
+                <!--android:layout_height="200dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:contentDescription="@string/img_fetch_message"-->
+                <!--app:imageUrl="@{traffic.sourcePicture}" />-->
         </LinearLayout>
 
     </android.support.constraint.ConstraintLayout>
